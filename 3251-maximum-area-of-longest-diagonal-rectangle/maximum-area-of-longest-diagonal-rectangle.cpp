@@ -10,10 +10,9 @@ public:
             int diagonal = pow(l,2)+pow(b,2);
             int area = l*b;
             if(maxDiagonal == diagonal){
-                 int tempArea = l*b;
-            maxArea = max(maxArea,tempArea);
+            maxArea = max(maxArea,area);
             }else if( diagonal > maxDiagonal ){
-                maxArea = l*b;
+                maxArea = area;
                 maxDiagonal = diagonal;
             }
            
